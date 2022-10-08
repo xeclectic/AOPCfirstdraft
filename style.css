@@ -6,7 +6,8 @@ html, body {
     overflow-x: hidden;
 }
 
-@media only screen and (max-width: 600px){
+    /*HAMBURGER MENU*/
+
     #menuToggle
 {
   display: block;
@@ -97,7 +98,6 @@ html, body {
   
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 #menu li
@@ -109,14 +109,25 @@ html, body {
 {
   transform: none;
 }
-};
-/* HAMBURGER MENU */
-
 
 /*END OF HAMBURGER*/
 
-/*
-.grid-container{
-    display: grid;
+/*BACKGROUND IMAGE*/
+
+#background{
+    position: relative;
+    width: 100vw;
+    bottom: 2rem;
 }
-*/
+
+@media only screen and (min-width: 600px){
+    #background{
+        display: none;
+    }
+
+    #menuToggle, menu{
+        display: none;
+    }
+};
+
+    /*END OF BACKGROUND IMAGE*/
