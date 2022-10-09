@@ -87,7 +87,7 @@ html, body {
 #menu
 {
   position: absolute;
-  width: 300px;
+  width: 400px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
@@ -120,7 +120,8 @@ html, body {
     bottom: 2rem;
 }
 
-@media only screen and (min-width: 600px){
+
+@media only screen and (min-width: 750px){
     #background{
         display: none;
     }
@@ -128,6 +129,50 @@ html, body {
     #menuToggle, menu{
         display: none;
     }
-};
+
+    .grid-container{
+      position: relative;
+      display: grid;
+      font-size: 120%;
+      left: 55vw;
+      top: 3vh;
+      grid-template-columns: repeat(9, 1fr);
+     }
+
+     #logo{
+      position:absolute;
+      top: 2%;
+      left: 2%;
+      width: 25rem;
+      height: 15rem;
+     }
+
+     #background-video{
+      width: 100vw;
+      height: 75vh;
+      margin: 0;
+      padding: 0;
+     }
+}
+
 
     /*END OF BACKGROUND IMAGE*/
+
+    @media only screen and (max-width: 750px){
+
+      .grid-container{
+        display: none;
+      }
+
+      #background-video{
+        display: none;
+      }
+
+      #logo{
+        position:absolute;
+        top: 0;
+        left: 35%;
+        width: 15rem;
+        height: 10rem;
+       }
+    }
